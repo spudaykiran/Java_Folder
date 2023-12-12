@@ -1,0 +1,58 @@
+Exception : an exception in java is an event which occurs during the Exception of the program,that disrupts the normal
+flow of the program's instructions to overcome this we use Exception handling in java.
+
+Exception handling : 
+it is powerful mechanism to handle the runtime errors so that normal flow of the application can be maintained
+
+
+Hierarchy of java Exception class : 
+
+                                Throwable
+                                    |
+                                    |
+                              ______|______
+                              |             |
+                              |             |
+                          Exception      Error
+                              |             |
+                              |             |-StackOverFlowError
+                 IOException -|             |
+                              |             |-VirtualMachineError
+                              |             |
+                SQL Exception-|             |-OutOfMemoryError
+                              |
+                              |
+      Class NotFoundException-|
+                              |
+            RuntimeException -|
+                    |
+                    |
+                    |-Arthimetic Exception
+                    |
+                    |-NullPointer Exception
+                    |
+                    |-NumberFormat Exception
+                    |
+                    |-indexOutOfBounds Exception
+                                    |
+                                    |
+   Array indexOutOfBounds Exception-|
+                                    |
+                                    |
+  String indexOutOfBounds Exception-|
+
+
+Types of Java Exceptions : 
+1.Checked Exceptions : The classes that directly inherit the Throwable class except RuntimeException and Error are known as checked exceptions.
+                       For example, IOException, SQLException, etc.Checked exceptions are checked at compile-time.
+2.Unchecked Exceptions : The classes that inherit the RuntimeException are known as unchecked exceptions. 
+                         For example, ArithmeticException, NullPointerException, ArrayIndexOutOfBoundsException, etc. 
+                         Unchecked exceptions are not checked at compile-time, but they are checked at runtime.
+3.Error : Error is irrecoverable. Some example of errors are OutOfMemoryError, VirtualMachineError, AssertionError etc.
+
+Java Exception KeyWords : 
+1.throws : It is used to declare that a method can throw an exception.
+2.throw : It is used to throw an exception.
+3.try : It is used to catch the exception.
+4.catch : It is used to handle the exception.
+5.finally : It is used to execute the code that must be executed regardless of whether an exception is thrown or not.
